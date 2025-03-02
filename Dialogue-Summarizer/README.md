@@ -16,7 +16,7 @@ This project leverages the power of **Flan-T5**, a Transformer-based model from 
 ### **WandB Integration:**
 - Integrated with Weights & Biases (WandB) from the project’s outset to track and visualize the training process. All training metrics, evaluation results, and performance logs are reported to WandB, enabling real-time monitoring and analysis of the model’s progress. Explore the [dashboard](https://wandb.ai/site/) for detailed insights into experiments and hyperparameter tuning.
 
-### ** Streamlit for UI**:
+### **Streamlit for UI:**
 - The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary. 
 
 ## How It Works
