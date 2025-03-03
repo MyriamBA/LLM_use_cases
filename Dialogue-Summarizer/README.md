@@ -3,6 +3,19 @@
 ## Project Overview
 This project leverages the power of **Flan-T5**, a Transformer-based model from Google, to build an efficient Dialogue Summarizer. Utilizing the **Hugging Face API**, the summarizer processes conversations and generates concise, meaningful summaries, making it ideal for distilling key points from dialogues quickly and accurately. Whether you’re analyzing customer support chats, summarizing meeting transcripts, or exploring conversational AI, this tool simplifies the process by automating summary generation with state-of-the-art NLP techniques.😊😎
 
+## Project Structure
+```
+Dialogue-Summarizer/
+│── peft-dialogue-summarizer-checkpoint/
+│   │── adapter_config
+│   │── adapter_model.bin
+│   │── special_tokens_map
+│   │── tokenizer
+│   │── tokenizer_config
+│── Dialogue_Summarizer.ipynb
+│── app.py
+```
+
 ## Technology Stack
 
 ### **Model:**
@@ -20,6 +33,35 @@ This project leverages the power of **Flan-T5**, a Transformer-based model from 
 - The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary. 
 
 ## How It Works
+The **Flan-T5-large** model has already been fine-tuned using **PEFT: LoRA**, enhancing its summary generation performance, as demonstrated in the table of ROUGE enhancements. In this project, we utilize the saved checkpoint from the fine-tuned PEFT model to ensure improved efficiency and accuracy.
 
+
+## Installation
+To set up and run the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MyriamBA/NLP_Projects.git
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate 
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
+
+## Future Enhancements
+- Incorporate multilingual dialogue, as this project currently generates summaries only in English.
+- Enhance UI/UX with better visualization tools.
+
+## Contributions
+Feel free to open issues and submit pull requests for improvements.
 
 
