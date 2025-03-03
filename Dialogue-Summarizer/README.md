@@ -34,6 +34,13 @@ Dialogue-Summarizer/
 
 ## How It Works
 The **Flan-T5-large** model has already been fine-tuned using **PEFT: LoRA**, enhancing its summary generation performance, as demonstrated in the table of ROUGE enhancements. In this project, we utilize the saved checkpoint from the fine-tuned PEFT model to ensure improved efficiency and accuracy.
+| Metric | Original-model | Improvement |
+|----------|----------|----------|
+| rouge 1   | 0.4122  | 2.96%   |
+| rouge 2   | 0.1137   | 5.03%  |
+| rougeL  | 0.2795   | 4.22%   |
+| rougeLsum  | 0.2182   | 4.12%   |
+
 
 
 ## Installation
