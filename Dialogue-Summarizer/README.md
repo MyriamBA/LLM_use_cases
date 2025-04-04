@@ -1,7 +1,7 @@
 # Dialogue-Summarizer
 
 ## Project Overview
-This project leverages the power of **Flan-T5**, a Transformer-based model from Google, to build an efficient Dialogue Summarizer. Utilizing the **Hugging Face API**, the summarizer processes conversations and generates concise, meaningful summaries, making it ideal for distilling key points from dialogues quickly and accurately. Whether you’re analyzing customer support chats, summarizing meeting transcripts, or exploring conversational AI, this tool simplifies the process by automating summary generation with state-of-the-art NLP techniques.😊😎
+This project leverages the power of **Flan-T5**, a Transformer-based model from Google, to build an efficient Dialogue Summarizer. Utilizing the Hugging Face API, the summarizer processes conversations and generates concise, meaningful summaries. Whether you’re analyzing customer support chats, summarizing meeting transcripts, or exploring conversational AI, this tool simplifies the process by automating summary generation with state-of-the-art NLP techniques.😊😎
 
 ## Project Structure
 ```
@@ -27,7 +27,7 @@ Dialogue-Summarizer/
 ### **Training**: 
 - Parameter-Efficient Fine-tuning (PEFT) with **LoRA** configuration to adapt the model efficiently, tuning **0.6%** of parameters to save resources, speed up training, and avoid overfitting.
 ### **WandB Integration:**
-- Integrated with Weights & Biases (WandB) from the project’s outset to track and visualize the training process. All training metrics, evaluation results, and performance logs are reported to WandB, enabling real-time monitoring and analysis of the model’s progress. Explore the [dashboard](https://wandb.ai/site/) for detailed insights into experiments and hyperparameter tuning.
+- Integrated with Weights & Biases (WandB) from the project’s outset to track and visualize the training process. All training metrics, evaluation results, and performance logs are reported to WandB. Explore the [dashboard](https://wandb.ai/site/) for detailed insights into experiments and hyperparameter tuning.
 
 ### **Streamlit for UI:**
 - The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary. 
