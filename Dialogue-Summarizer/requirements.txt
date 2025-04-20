@@ -12,6 +12,7 @@ nltk
 notebook
 python-box==6.0.2
 PyYAML
+fastapi
 tqdm
 boto3
 mypy-boto3-s3
