@@ -38,7 +38,7 @@ Dialogue-Summarizer/
 - The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary.
   
 ### **FastAPI for Backend:**
--FastAPI for backend that serves the inference model
+- FastAPI for backend that serves the inference model
 
 ## How It Works
 The **Flan-T5-large** model has already been fine-tuned using **PEFT: LoRA**, enhancing its summary generation performance, as demonstrated in the table of ROUGE enhancements. In this project, we utilize the saved checkpoint from the fine-tuned PEFT model to ensure improved efficiency and accuracy. For further fine-tuning, use the Dialogue_Summarizer.ipynb.
