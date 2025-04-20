@@ -6,6 +6,11 @@ This project leverages the power of **Flan-T5**, a Transformer-based model from 
 ## Project Structure
 ```
 Dialogue-Summarizer/
+│── backend/
+│   │── app.py
+│   │── model.py
+│── frontend/
+│   │── streamlit_app.py
 │── peft-dialogue-summarizer-checkpoint/
 │   │── adapter_config
 │   │── adapter_model.bin
@@ -30,7 +35,10 @@ Dialogue-Summarizer/
 - Integrated with Weights & Biases (WandB) from the project’s outset to track and visualize the training process. All training metrics, evaluation results, and performance logs are reported to WandB. Explore the [dashboard](https://wandb.ai/site/) for detailed insights into experiments and hyperparameter tuning.
 
 ### **Streamlit for UI:**
-- The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary. 
+- The frontend is built using Streamlit, providing an interactive and user-friendly interface for your dialogue and generating the summary.
+  
+### **FastAPI for Backend:**
+-FastAPI for backend that serves the inference model
 
 ## How It Works
 The **Flan-T5-large** model has already been fine-tuned using **PEFT: LoRA**, enhancing its summary generation performance, as demonstrated in the table of ROUGE enhancements. In this project, we utilize the saved checkpoint from the fine-tuned PEFT model to ensure improved efficiency and accuracy. For further fine-tuning, use the Dialogue_Summarizer.ipynb.
@@ -60,14 +68,14 @@ To set up and run the project, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the application:
+4. Build and Run the application:
    ```bash
-   streamlit run app.py
+   docker-compose build
+   docker-compose up
    ```
 
 ## Future Enhancements
 - Incorporate multilingual dialogue, as this project currently generates summaries only in English.
-- Enhance UI/UX with better visualization tools.
 
 ## Contributions
 Feel free to open issues and submit pull requests for improvements.
