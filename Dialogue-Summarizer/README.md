@@ -29,7 +29,7 @@ Dialogue-Summarizer/
 - Built with Hugging Face’s [transformers library](https://huggingface.co/docs/transformers/index) for seamless model integration and inference. 
 ### **Dataset**:
 - [DialogSum](https://huggingface.co/datasets/knkarthick/dialogsum), which is a large-scale dialogue summarization dataset (English dialogues).
-### **Training**: 
+### **Fine-tuning**: 
 - Parameter-Efficient Fine-tuning (PEFT) with **LoRA** configuration to adapt the model efficiently, tuning **0.6%** of parameters to save resources, speed up training, and avoid overfitting.
 ### **WandB Integration:**
 - Integrated with Weights & Biases (WandB) from the project’s outset to track and visualize the training process. All training metrics, evaluation results, and performance logs are reported to WandB. Explore the [dashboard](https://wandb.ai/site/) for detailed insights into experiments and hyperparameter tuning.
